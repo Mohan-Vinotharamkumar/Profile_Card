@@ -1,0 +1,99 @@
+body
+{
+    display: flex;
+}
+.container
+{
+    height: 30rem;
+    width: 35%;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+#user-icon
+{
+    font-size: 5rem;
+    color: #FF7F3F;
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    left: 40%;
+    border-radius: 50%;
+    height: 10rem;
+    width: 30%;
+}
+.sub-cont-1
+{
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(profile.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0%;
+    opacity: 0.7;
+}
+.sub-cont-2
+{
+    height: 90% !important;
+    background-color: #FADA9D;
+    width:100% !important;
+    position: relative;
+    top: 150%;
+    transition-duration: 1s;
+    display: flex;
+    opacity: 0.9;
+}
+
+.container:hover .sub-cont-2 {
+    top:30px;
+ }
+ .name
+ {
+    margin-top: 13%;
+    margin-left: 35%;
+    font-family: Garamond;
+ }
+ .details
+ {
+    height: 70%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    margin-top: 15%;
+ }
+ .link
+ {
+    text-decoration: none;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#624F82;
+    /* margin-left: 25%; */
+    font-size: 1.2rem;
+ }
+ .icos{
+    /* margin-left: 33%;  */
+    margin-top: 5%;
+}
+#ic{
+    font-size: 1.5rem;
+    margin-left: 3%;
+    color: #9D3C72;
+    transition: 2s ;
+}
+#ic:hover{
+    transform: rotate(360deg);
+    box-shadow: 3px  2px 8px 2px orange;
+}
+
+@media only screen and (max-width: 800px)
+{
+    #user-icon
+    {
+        font-size: 3rem;
+    }
+    .container:hover .sub-cont-2 {
+        top:30px;
+     }
+}
